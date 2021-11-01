@@ -26,11 +26,19 @@ class Node:
             else:
                 self.data = data
             
-    
+    def inOrderTraverse(self,root):
+        res=[]
+        if root:
+            res = self.inOrderTraverse(root.left)
         
 root = Node(10)
 
+#Adding
 root.insert(6)
 root.insert(14)
 root.insert(3)
+
+#Printing
 root.PrintTree()
+
+#Inorder Traversal
